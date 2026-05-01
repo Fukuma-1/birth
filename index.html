@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            <span class="happy">SELAMAT</span>
+            <span class="new">ULANG</span>
+            <span class="year">TAHUN</span>
+        </h1>
+
+        <div class="birthday-message">
+            <h2>Happy Birthday! </h2>
+            <p>Semoga hari spesialmu dipenuhi dengan kebahagiaan, tawa, dan momen indah bersama orang-orang tersayang.</p>
+            <p>Semoga semua impianmu tercapai, kesehatan selalu menyertai, dan setiap langkahmu membawa kesuksesan.</p>
+            <p>Nikmati hari istimewa ini, karena hari ini adalah tentang dirimu! ✨</p>
+        </div>
+
+        <div class="countdown">
+            <div class="time-box">
+                <span id="days">00</span>
+                <p>Hari</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Jam</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Menit</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Detik</p>
+            </div>
+        </div>
+
+        <canvas id="fireworks"></canvas>
+
+        <audio id="bg-music" loop>
+            <source src="https://www.soundjay.com/human/sounds/applause-8.wav" type="audio/wav">
+            Browser Anda tidak mendukung elemen audio.
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

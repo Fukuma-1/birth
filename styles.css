@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24, #f0932b, #ff9ff3, #54a0ff, #5f27cd);
+    background-size: 400% 400%;
+    animation: gradientShift 10s ease infinite;
+    color: #fff;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.title {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.happy {
+    color: #ff6b6b;
+}
+
+.new {
+    color: #4ecdc4;
+}
+
+.year {
+    color: pink;
+}
+
+.year-num {
+    color: #f9ca24;
+}
+
+.year-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+}
+
+.year-part {
+    display: inline-block;
+    transition: transform 1s ease-in-out;
+}
+
+#year-5 {
+    animation: slideDown 1s ease-in-out forwards;
+}
+
+#year-6 {
+    animation: slideUp 1s ease-in-out 1s forwards;
+}
+
+@keyframes slideDown {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(100px); opacity: 0; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(-100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.time-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.time-box p {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
