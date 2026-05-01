@@ -1,53 +1,43 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Ulang Tahun</title>
+    <title>Happy New Year 2026</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1 class="title">
-            <span class="happy">SELAMAT</span>
-            <span class="new">ULANG</span>
-            <span class="year">TAHUN</span>
-        </h1>
-
-        <div class="birthday-message">
-            <h2>Happy Birthday! </h2>
-            <p>Semoga hari spesialmu dipenuhi dengan kebahagiaan, tawa, dan momen indah bersama orang-orang tersayang.</p>
-            <p>Semoga semua impianmu tercapai, kesehatan selalu menyertai, dan setiap langkahmu membawa kesuksesan.</p>
-            <p>Nikmati hari istimewa ini, karena setiap hari akan adalah tentang dirimu! ✨</p>
+        <h1 class="title"><span class="happy">HAPPY</span> <span class="new">BIRTH</span> <span class="year">DAY</span></h1>
+        <div class="year-container">
+            <span class="year-part" id="year-202">2</span>
+            <span class="year-part" id="year-5">0</span>
+            <span class="year-part" id="year-6" style="display: none;">1</span>
         </div>
-
         <div class="countdown">
             <div class="time-box">
                 <span id="days">00</span>
-                <p>Hari</p>
+                <p>Days</p>
             </div>
             <div class="time-box">
                 <span id="hours">00</span>
-                <p>Jam</p>
+                <p>Hours</p>
             </div>
             <div class="time-box">
                 <span id="minutes">00</span>
-                <p>Menit</p>
+                <p>Minutes</p>
             </div>
             <div class="time-box">
                 <span id="seconds">00</span>
-                <p>Detik</p>
+                <p>Seconds</p>
             </div>
         </div>
-
         <canvas id="fireworks"></canvas>
-
         <audio id="bg-music" loop>
-            <source src="https://www.soundjay.com/human/sounds/applause-8.wav" type="audio/wav">
-            Browser Anda tidak mendukung elemen audio.
+            <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+            Your browser does not support the audio element.
         </audio>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
